@@ -27,8 +27,9 @@ public class Hello{
         {
           if(" ".Equals(date.Substring(i,1)))
           {
-            time = date.Substring(i + 1,8);
-             Console.WriteLine(time);
+            Console.WriteLine(date.Length);
+            time = date.Substring(date.Length - (date.Length - (i + 1)));
+            Console.WriteLine(time);
           }
         }
         string format = "";
